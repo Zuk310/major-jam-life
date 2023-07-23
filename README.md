@@ -1,1 +1,1 @@
-#This is a repo for the major jam - life game jam
+# This is a repo for the major jam - life game jam
