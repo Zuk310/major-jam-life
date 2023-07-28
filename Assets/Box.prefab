@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3785485760590213950}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Window
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,3 +216,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a842d6e1ffa84f442b3ac85f898c7bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsToAdd: 10

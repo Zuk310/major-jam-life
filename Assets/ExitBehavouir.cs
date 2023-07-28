@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class ExitBehavouir : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    ScoreManager scoreManager;
+    public int pointsToAdd = 10;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     private void OnMouseDown()
     {
         Debug.Log("destroyed!");
         Destroy(transform.parent.gameObject);
+        if (scoreManager != null)
+        {
+            scoreManager.UpdateScore(pointsToAdd);
+        }
     }
 }
